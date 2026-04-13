@@ -4,33 +4,27 @@ import exception.TaskNotFoundException;
 import model.Task;
 
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class TaskService{
     private Map<Integer,Task> tasks = new ConcurrentHashMap<>();
     private AtomicInteger nextId = new AtomicInteger(1);
-    private int id = nextId.getAndIncrement();
-    ExecutorService executor = Executors.newFixedThreadPool(2);
+    private final ExecutorService executor = Executors.newFixedThreadPool(2);
 
 
-    public void create(String name, int priority, int id){
-        Task task = new Task(name,priority, id);
-        tasks.put(id,task);
+    public Task create(String name, int priority){
+        int id = nextId.getAndIncrement();
+        Task task = new Task(name, priority, id);
+        tasks.put(id, task);
+        return task;
     }
     public Future<Task> createAsync(String name, int priority) {
-        return executor.submit(() -> {
-            int id = nextId.getAndIncrement();
-            Task task = new Task(name, priority, id);
-            tasks.put(id, task);
-            return task;
-        });
+        return executor.submit(() -> create(name, priority));
     }
-    public void shutdown() {
+    public void shutdown() throws InterruptedException {
         executor.shutdown();
+        executor.awaitTermination(1, TimeUnit.SECONDS);
     }
 
     public List<Task> readAll(){
