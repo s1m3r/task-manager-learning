@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a1362d8-0a08-4bb7-bc39-c60c912afb61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/exception/TaskNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/model/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/exception/TaskNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/exception/TaskNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/service/TaskService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,21 +25,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "s1m3r"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;s1m3r&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/s1m3r/task-manager-learning.git",
-    "accountId": "cf636644-c0ff-4cc8-90f0-16e3187a9334"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/s1m3r/task-manager-learning.git&quot;,
+    &quot;accountId&quot;: &quot;cf636644-c0ff-4cc8-90f0-16e3187a9334&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="3CFhxDcFB2ORnLkNjEpa599USki" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -61,12 +62,25 @@
   }
 }]]></component>
   <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="core" />
+      <option name="VM_PARAMETERS" value="--enable-native-access=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="VM_PARAMETERS" value="--enable-native-access=ALL-UNNAMED" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -84,8 +98,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1775987469229</updated>
-      <workItem from="1775987470341" duration="608000" />
+      <workItem from="1775987470341" duration="10836000" />
     </task>
+    <task id="LOCAL-00001" summary="Add task model with fields and constructors">
+      <option name="closed" value="true" />
+      <created>1775991237434</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775991237434</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add TaskService with CRUD operations">
+      <option name="closed" value="true" />
+      <created>1775994491555</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775994491555</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add custom exception for task not found">
+      <option name="closed" value="true" />
+      <created>1775996229638</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775996229638</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add Task model with fields and basic methods">
+      <option name="closed" value="true" />
+      <created>1775996267964</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775996267965</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,10 +143,29 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add task model with fields and constructors" />
+    <MESSAGE value="Add TaskService with CRUD operations" />
+    <MESSAGE value="Add custom exception for task not found" />
+    <MESSAGE value="Add Task model with fields and basic methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Task model with fields and basic methods" />
   </component>
 </project>

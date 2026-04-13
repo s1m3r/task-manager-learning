@@ -1,9 +1,21 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Task {
     private String name;
     private int priority;
     private int id;
+    private List<String> tags = new ArrayList<>();
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<String> tags) {
+        this.tags = tags;
+    }
 
     public void setName(String name) {
         this.name = name;
