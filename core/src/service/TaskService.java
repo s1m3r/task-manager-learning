@@ -29,17 +29,20 @@ public class TaskService{
                 }
         }
     }
-    public Task getById(int id) throws TaskNotFoundException {
-        for (int i = 0; i < tasks.size(); i++) {
-
-            Task task = tasks.get(i);
-
-            if(task.getId() == id){
-                return task;
-            }
-        }
-        throw new TaskNotFoundException();
+    public Task getById(int id) throws  TaskNotFoundException{
+        return tasks.stream()
+                .filter(t -> t.getId() == id)
+                .findFirst()
+                .orElseThrow(() -> new TaskNotFoundException(id));
     }
+
+    public List<Task> getByPriorityTwo(){
+        return tasks.stream()
+                    .filter(t -> t.getPriority() > 2)
+                    .toList();
+    }
+
+
     public void update(int id, String name, int priority) throws TaskNotFoundException {
         Task task = getById(id);
         task.setName(name);
