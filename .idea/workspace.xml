@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1362d8-0a08-4bb7-bc39-c60c912afb61" name="Changes" comment="">
+    <list default="true" id="7a1362d8-0a08-4bb7-bc39-c60c912afb61" name="Changes" comment="Remove compiled files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/exception/TaskNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/exception/TaskNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/service/TaskService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +47,9 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/spring-init",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sasha/Desktop/demo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,7 +96,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1775987469229</updated>
-      <workItem from="1775987470341" duration="10836000" />
+      <workItem from="1775987470341" duration="24358000" />
+      <workItem from="1776182169946" duration="2267000" />
     </task>
     <task id="LOCAL-00001" summary="Add task model with fields and constructors">
       <option name="closed" value="true" />
@@ -132,7 +131,31 @@
       <option name="project" value="LOCAL" />
       <updated>1775996267965</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="in TaskService modify method getById using stream and added method getByPriorityTwo">
+      <option name="closed" value="true" />
+      <created>1776074084723</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776074084723</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update README, improve project structure">
+      <option name="closed" value="true" />
+      <created>1776087483820</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1776087483820</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Remove compiled files">
+      <option name="closed" value="true" />
+      <created>1776087692435</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776087692435</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +172,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="feature/spring-init" />
                       </list>
                     </value>
                   </entry>
@@ -166,6 +189,9 @@
     <MESSAGE value="Add TaskService with CRUD operations" />
     <MESSAGE value="Add custom exception for task not found" />
     <MESSAGE value="Add Task model with fields and basic methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Task model with fields and basic methods" />
+    <MESSAGE value="in TaskService modify method getById using stream and added method getByPriorityTwo" />
+    <MESSAGE value="update README, improve project structure" />
+    <MESSAGE value="Remove compiled files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove compiled files" />
   </component>
 </project>
